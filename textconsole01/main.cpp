@@ -16,7 +16,7 @@
 #include <map>
 #include <chrono>
 #include<cmath>
-
+#include "Vec2D.hpp"
 
 
 namespace ronald {
@@ -54,35 +54,8 @@ int sum(int a, int b){
     return a + b;
 }
 
-namespace ronald1{
-void printVector(std::vector<int> vec){
-    for(int v: vec){
-        std::cout << v << std::endl;
-    }
-}
-class Vec2D{
-private:
-    float x;
-    float y;
-public:
-    Vec2D(){
-        x=0.f;
-        y=0.f;
-    }
-    
-    Vec2D(float xv, float yv){
-        x = xv;
-        y = yv;
-    }
-    float length(){
-        return std::sqrt(x*x + y*y);
-        
-    }
-    
-};
 
-}
-using namespace ronald1;
+using namespace ronald;
 int main(int argc, const char * argv[]) {
     
 //    std::vector<int> vec;
@@ -101,8 +74,15 @@ int main(int argc, const char * argv[]) {
 //    std::cout << "After sort:" <<std::endl;
 //    ronald1::printVector(vec);
     
-    Vec2D v1(30.f, 40.f);
-    std::cout <<v1.length() <<std::endl;
+    std::vector<Vec2D<float>> vecs;
+    
+    vecs.push_back(Vec2D<float>(10.f, 10.f));
+    vecs.push_back(Vec2D<float>(20.f, 10.f));
+    vecs.push_back(Vec2D<float>(30.f, 10.f));
+    vecs.push_back(Vec2D<float>(40.f, 10.f));
+    for(auto v : vecs){
+        std::cout << v ;
+    }
     
     return 0;
 }

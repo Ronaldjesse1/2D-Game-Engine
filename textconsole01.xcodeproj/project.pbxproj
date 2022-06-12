@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		52101C0C2854D2A0004DC089 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52101C0B2854D2A0004DC089 /* main.cpp */; };
+		52101C172855C497004DC089 /* Vec2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52101C152855C497004DC089 /* Vec2D.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		52101C082854D2A0004DC089 /* textconsole01 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = textconsole01; sourceTree = BUILT_PRODUCTS_DIR; };
 		52101C0B2854D2A0004DC089 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		52101C152855C497004DC089 /* Vec2D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vec2D.cpp; sourceTree = "<group>"; };
+		52101C162855C497004DC089 /* Vec2D.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Vec2D.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,8 @@
 		52101C0A2854D2A0004DC089 /* textconsole01 */ = {
 			isa = PBXGroup;
 			children = (
+				52101C152855C497004DC089 /* Vec2D.cpp */,
+				52101C162855C497004DC089 /* Vec2D.hpp */,
 				52101C0B2854D2A0004DC089 /* main.cpp */,
 			);
 			path = textconsole01;
@@ -119,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52101C172855C497004DC089 /* Vec2D.cpp in Sources */,
 				52101C0C2854D2A0004DC089 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
