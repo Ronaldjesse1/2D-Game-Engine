@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52101C262855C55B004DC089 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52101C252855C55B004DC089 /* AppDelegate.m */; };
+		52101C292855C55B004DC089 /* Renderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 52101C282855C55B004DC089 /* Renderer.mm */; };
+		52101C2C2855C55B004DC089 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52101C2B2855C55B004DC089 /* GameViewController.m */; };
+		52101C2E2855C55B004DC089 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 52101C2D2855C55B004DC089 /* Shaders.metal */; };
+		52101C312855C55D004DC089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52101C302855C55D004DC089 /* Assets.xcassets */; };
+		52101C342855C55D004DC089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52101C322855C55D004DC089 /* Main.storyboard */; };
+		52101C362855C55D004DC089 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52101C352855C55D004DC089 /* main.m */; };
+		52101C412855C55E004DC089 /* _dGameEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52101C402855C55E004DC089 /* _dGameEngineTests.m */; };
+		52101C4B2855C55E004DC089 /* _dGameEngineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52101C4A2855C55E004DC089 /* _dGameEngineUITests.m */; };
+		52101C4D2855C55E004DC089 /* _dGameEngineUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52101C4C2855C55E004DC089 /* _dGameEngineUITestsLaunchTests.m */; };
+		52101C5B2855C7A7004DC089 /* MyRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52101C592855C7A7004DC089 /* MyRenderer.cpp */; };
+		52101C5C2855C7A7004DC089 /* MyRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52101C592855C7A7004DC089 /* MyRenderer.cpp */; };
+		52101C5D2855C7A7004DC089 /* MyRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52101C592855C7A7004DC089 /* MyRenderer.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52101C3D2855C55E004DC089 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52101C192855C55B004DC089 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52101C202855C55B004DC089;
+			remoteInfo = 2dGameEngine;
+		};
+		52101C472855C55E004DC089 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52101C192855C55B004DC089 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52101C202855C55B004DC089;
+			remoteInfo = 2dGameEngine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52101C212855C55B004DC089 /* 2dGameEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2dGameEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52101C242855C55B004DC089 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		52101C252855C55B004DC089 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		52101C272855C55B004DC089 /* Renderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		52101C282855C55B004DC089 /* Renderer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Renderer.mm; sourceTree = "<group>"; };
+		52101C2A2855C55B004DC089 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		52101C2B2855C55B004DC089 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		52101C2D2855C55B004DC089 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		52101C2F2855C55B004DC089 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		52101C302855C55D004DC089 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52101C332855C55D004DC089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52101C352855C55D004DC089 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52101C372855C55D004DC089 /* _dGameEngine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = _dGameEngine.entitlements; sourceTree = "<group>"; };
+		52101C3C2855C55E004DC089 /* 2dGameEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2dGameEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52101C402855C55E004DC089 /* _dGameEngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _dGameEngineTests.m; sourceTree = "<group>"; };
+		52101C462855C55E004DC089 /* 2dGameEngineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2dGameEngineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52101C4A2855C55E004DC089 /* _dGameEngineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _dGameEngineUITests.m; sourceTree = "<group>"; };
+		52101C4C2855C55E004DC089 /* _dGameEngineUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _dGameEngineUITestsLaunchTests.m; sourceTree = "<group>"; };
+		52101C592855C7A7004DC089 /* MyRenderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyRenderer.cpp; sourceTree = "<group>"; };
+		52101C5A2855C7A7004DC089 /* MyRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyRenderer.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52101C1E2855C55B004DC089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52101C392855C55E004DC089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52101C432855C55E004DC089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52101C182855C55B004DC089 = {
+			isa = PBXGroup;
+			children = (
+				52101C232855C55B004DC089 /* 2dGameEngine */,
+				52101C3F2855C55E004DC089 /* 2dGameEngineTests */,
+				52101C492855C55E004DC089 /* 2dGameEngineUITests */,
+				52101C222855C55B004DC089 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52101C222855C55B004DC089 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52101C212855C55B004DC089 /* 2dGameEngine.app */,
+				52101C3C2855C55E004DC089 /* 2dGameEngineTests.xctest */,
+				52101C462855C55E004DC089 /* 2dGameEngineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52101C232855C55B004DC089 /* 2dGameEngine */ = {
+			isa = PBXGroup;
+			children = (
+				52101C242855C55B004DC089 /* AppDelegate.h */,
+				52101C252855C55B004DC089 /* AppDelegate.m */,
+				52101C272855C55B004DC089 /* Renderer.h */,
+				52101C282855C55B004DC089 /* Renderer.mm */,
+				52101C2A2855C55B004DC089 /* GameViewController.h */,
+				52101C2B2855C55B004DC089 /* GameViewController.m */,
+				52101C2D2855C55B004DC089 /* Shaders.metal */,
+				52101C2F2855C55B004DC089 /* ShaderTypes.h */,
+				52101C302855C55D004DC089 /* Assets.xcassets */,
+				52101C322855C55D004DC089 /* Main.storyboard */,
+				52101C352855C55D004DC089 /* main.m */,
+				52101C372855C55D004DC089 /* _dGameEngine.entitlements */,
+				52101C592855C7A7004DC089 /* MyRenderer.cpp */,
+				52101C5A2855C7A7004DC089 /* MyRenderer.hpp */,
+			);
+			path = 2dGameEngine;
+			sourceTree = "<group>";
+		};
+		52101C3F2855C55E004DC089 /* 2dGameEngineTests */ = {
+			isa = PBXGroup;
+			children = (
+				52101C402855C55E004DC089 /* _dGameEngineTests.m */,
+			);
+			path = 2dGameEngineTests;
+			sourceTree = "<group>";
+		};
+		52101C492855C55E004DC089 /* 2dGameEngineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52101C4A2855C55E004DC089 /* _dGameEngineUITests.m */,
+				52101C4C2855C55E004DC089 /* _dGameEngineUITestsLaunchTests.m */,
+			);
+			path = 2dGameEngineUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52101C202855C55B004DC089 /* 2dGameEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52101C502855C55E004DC089 /* Build configuration list for PBXNativeTarget "2dGameEngine" */;
+			buildPhases = (
+				52101C1D2855C55B004DC089 /* Sources */,
+				52101C1E2855C55B004DC089 /* Frameworks */,
+				52101C1F2855C55B004DC089 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 2dGameEngine;
+			productName = 2dGameEngine;
+			productReference = 52101C212855C55B004DC089 /* 2dGameEngine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52101C3B2855C55E004DC089 /* 2dGameEngineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52101C532855C55E004DC089 /* Build configuration list for PBXNativeTarget "2dGameEngineTests" */;
+			buildPhases = (
+				52101C382855C55E004DC089 /* Sources */,
+				52101C392855C55E004DC089 /* Frameworks */,
+				52101C3A2855C55E004DC089 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52101C3E2855C55E004DC089 /* PBXTargetDependency */,
+			);
+			name = 2dGameEngineTests;
+			productName = 2dGameEngineTests;
+			productReference = 52101C3C2855C55E004DC089 /* 2dGameEngineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52101C452855C55E004DC089 /* 2dGameEngineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52101C562855C55E004DC089 /* Build configuration list for PBXNativeTarget "2dGameEngineUITests" */;
+			buildPhases = (
+				52101C422855C55E004DC089 /* Sources */,
+				52101C432855C55E004DC089 /* Frameworks */,
+				52101C442855C55E004DC089 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52101C482855C55E004DC089 /* PBXTargetDependency */,
+			);
+			name = 2dGameEngineUITests;
+			productName = 2dGameEngineUITests;
+			productReference = 52101C462855C55E004DC089 /* 2dGameEngineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52101C192855C55B004DC089 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					52101C202855C55B004DC089 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					52101C3B2855C55E004DC089 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 52101C202855C55B004DC089;
+					};
+					52101C452855C55E004DC089 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 52101C202855C55B004DC089;
+					};
+				};
+			};
+			buildConfigurationList = 52101C1C2855C55B004DC089 /* Build configuration list for PBXProject "2dGameEngine" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52101C182855C55B004DC089;
+			productRefGroup = 52101C222855C55B004DC089 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52101C202855C55B004DC089 /* 2dGameEngine */,
+				52101C3B2855C55E004DC089 /* 2dGameEngineTests */,
+				52101C452855C55E004DC089 /* 2dGameEngineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52101C1F2855C55B004DC089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52101C312855C55D004DC089 /* Assets.xcassets in Resources */,
+				52101C342855C55D004DC089 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52101C3A2855C55E004DC089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52101C442855C55E004DC089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52101C1D2855C55B004DC089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52101C362855C55D004DC089 /* main.m in Sources */,
+				52101C2E2855C55B004DC089 /* Shaders.metal in Sources */,
+				52101C5B2855C7A7004DC089 /* MyRenderer.cpp in Sources */,
+				52101C292855C55B004DC089 /* Renderer.mm in Sources */,
+				52101C2C2855C55B004DC089 /* GameViewController.m in Sources */,
+				52101C262855C55B004DC089 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52101C382855C55E004DC089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52101C5C2855C7A7004DC089 /* MyRenderer.cpp in Sources */,
+				52101C412855C55E004DC089 /* _dGameEngineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52101C422855C55E004DC089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52101C4D2855C55E004DC089 /* _dGameEngineUITestsLaunchTests.m in Sources */,
+				52101C4B2855C55E004DC089 /* _dGameEngineUITests.m in Sources */,
+				52101C5D2855C7A7004DC089 /* MyRenderer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52101C3E2855C55E004DC089 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52101C202855C55B004DC089 /* 2dGameEngine */;
+			targetProxy = 52101C3D2855C55E004DC089 /* PBXContainerItemProxy */;
+		};
+		52101C482855C55E004DC089 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52101C202855C55B004DC089 /* 2dGameEngine */;
+			targetProxy = 52101C472855C55E004DC089 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52101C322855C55D004DC089 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52101C332855C55D004DC089 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52101C4E2855C55E004DC089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		52101C4F2855C55E004DC089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		52101C512855C55E004DC089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = 2dGameEngine/_dGameEngine.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C34987GYFH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.kyoungbin2dGameEngine.-dGameEngine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		52101C522855C55E004DC089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = 2dGameEngine/_dGameEngine.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C34987GYFH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.kyoungbin2dGameEngine.-dGameEngine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		52101C542855C55E004DC089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C34987GYFH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.kyoungbin2dGameEngine.-dGameEngineTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/2dGameEngine.app/Contents/MacOS/2dGameEngine";
+			};
+			name = Debug;
+		};
+		52101C552855C55E004DC089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C34987GYFH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.kyoungbin2dGameEngine.-dGameEngineTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/2dGameEngine.app/Contents/MacOS/2dGameEngine";
+			};
+			name = Release;
+		};
+		52101C572855C55E004DC089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C34987GYFH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.kyoungbin2dGameEngine.-dGameEngineUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = 2dGameEngine;
+			};
+			name = Debug;
+		};
+		52101C582855C55E004DC089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C34987GYFH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.kyoungbin2dGameEngine.-dGameEngineUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = 2dGameEngine;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52101C1C2855C55B004DC089 /* Build configuration list for PBXProject "2dGameEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52101C4E2855C55E004DC089 /* Debug */,
+				52101C4F2855C55E004DC089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52101C502855C55E004DC089 /* Build configuration list for PBXNativeTarget "2dGameEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52101C512855C55E004DC089 /* Debug */,
+				52101C522855C55E004DC089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52101C532855C55E004DC089 /* Build configuration list for PBXNativeTarget "2dGameEngineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52101C542855C55E004DC089 /* Debug */,
+				52101C552855C55E004DC089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52101C562855C55E004DC089 /* Build configuration list for PBXNativeTarget "2dGameEngineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52101C572855C55E004DC089 /* Debug */,
+				52101C582855C55E004DC089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52101C192855C55B004DC089 /* Project object */;
+}
