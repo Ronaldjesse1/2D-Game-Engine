@@ -17,7 +17,7 @@
 #include <chrono>
 #include<cmath>
 #include "Vec2D.hpp"
-
+#include <fstream>
 
 namespace ronald {
 
@@ -73,16 +73,16 @@ int main(int argc, const char * argv[]) {
 ////    });
 //    std::cout << "After sort:" <<std::endl;
 //    ronald1::printVector(vec);
-    
-    std::vector<Vec2D<float>> vecs;
-    
-    vecs.push_back(Vec2D<float>(10.f, 10.f));
-    vecs.push_back(Vec2D<float>(20.f, 10.f));
-    vecs.push_back(Vec2D<float>(30.f, 10.f));
-    vecs.push_back(Vec2D<float>(40.f, 10.f));
-    for(auto v : vecs){
-        std::cout << v ;
+    std::ifstream ifs;
+    ifs.open("/Users/Ronald/Documents/GitHub/2D-Game-Engine/mario_PNG53.png");
+    if(ifs.is_open()){
+        char data[5];
+        ifs.read(data, 4);
+        
+        std::cout << data << std::endl;
+        ifs.close();
     }
+    
     
     return 0;
 }
